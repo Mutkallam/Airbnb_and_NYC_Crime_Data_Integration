@@ -5,15 +5,19 @@ In this project, I analyzed and integrated two real-world datasets, 2019 NYC Air
 
 ### Key Steps:
 Data Cleaning & Preparation: Cleaned 48,000+ Airbnb records and ~200,000 crime incidents. Removed irrelevant features and filtered extreme values.
+
 Geospatial Data Integration: Used Haversine distance with BallTree to count crimes within a 200-meter radius of each listing.
 
 ### Exploratory Data Analysis:
 Visualized price distributions across boroughs and room types.
+
 Found a weak positive Pearson correlation (0.10) between local crime count and Airbnb price.
 
 ### Predictive Modeling:
 Built and optimized K-Nearest Neighbors Regressor using GridSearchCV (MAE: 61.5, R²: 0.22).
+
 Tuned a Random Forest Regressor for comparison (MAE: 61.7, R²: 0.21).
+
 Included encoded categorical variables, standard scaling, and hyperparameter tuning.
 
 ### Key Takeaways:
